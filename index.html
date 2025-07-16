@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva Derecho UCSC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Curricular de Derecho UCSC</h1>
+  <div class="creditos">Créditos Aprobados: <span id="creditosAprobados">0</span></div>
 
+  <div id="malla-container">
+    <!-- Semestres generados automáticamente por JavaScript -->
+  </div>
+
+  <!-- Modal para ingreso de notas -->
+  <div id="modalNotas" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <h3>Notas del ramo</h3>
+      <div id="formNotas"></div>
+      <button onclick="guardarNotas()">Guardar</button>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
