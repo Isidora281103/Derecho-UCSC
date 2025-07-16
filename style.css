@@ -1,1 +1,97 @@
+body {
+  background-color: #8b4a6e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
 
+h1 {
+  margin-top: 20px;
+}
+
+.creditos {
+  margin-bottom: 20px;
+}
+
+.semestre {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #f8c8dc;
+  border: 2px solid #e088b8;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 260px;
+}
+
+.semestre h2 {
+  margin-bottom: 10px;
+}
+
+.ramos {
+  list-style: none;
+  padding: 0;
+}
+
+.ramo {
+  background-color: #d97a9c;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.ramo.aprobado {
+  background-color: #b49ccf;
+  text-decoration: line-through;
+}
+
+.ramo.bloqueado {
+  background-color: #333;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.ramo .promedio {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.ramo:hover .promedio {
+  display: block;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  color: #000;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 18px;
+  color: red;
+}
